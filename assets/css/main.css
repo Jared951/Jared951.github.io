@@ -77,7 +77,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #1A1A1A;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2585,10 +2585,10 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		background-color: #0c0c0c;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,							top left;
+		/* background-image: url("images/overlay.png"), url("../../images/bg2.png"); */
+		background-position: top left,							top left;	
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
 		color: rgba(255, 255, 255, 0.5);
@@ -2637,7 +2637,7 @@ input, select, textarea {
 			width: 6.25em;
 		}
 
-/* Footer */
+Footer */
 
 	#footer .icons {
 		margin: 1em 0 0 0;
@@ -2986,26 +2986,26 @@ input, select, textarea {
 
 /* Large */
 
-	@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
 
-		/* Header */
+	/* Header */
 
-			#header {
-				padding: 6em 3em 3em 3em;
-				width: 30%;
+		#header {
+			padding: 6em 3em 3em 3em;
+			width: 30%;
+		}
+
+			#header h1 {
+				font-size: 1.25em;
 			}
 
-				#header h1 {
-					font-size: 1.25em;
+				#header h1 br {
+					display: none;
 				}
 
-					#header h1 br {
-						display: none;
-					}
-
-				#header > .inner {
-					margin-bottom: 0;
-				}
+			#header > .inner {
+				margin-bottom: 0;
+			}
 
 		/* Footer */
 
@@ -3072,7 +3072,8 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				/* HERE */
+				background-image: url("images/overlay.png"), url("../../images/bg2.png");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
@@ -3227,11 +3228,11 @@ input, select, textarea {
 	/* Media query for mobile devices */
 @media (max-width: 768px) {
 	.icon {
-		flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+		flex-wrap: wrap; 
 	}
 
 	.icon img {
-		margin-right: 0; /* Remove margin on smaller screens for stacked layout */
-		margin-bottom: 10px; /* Add margin at the bottom of each image for spacing */
+		margin-right: 0; 
+		margin-bottom: 10px; 
 	}
 }
