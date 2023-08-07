@@ -3071,9 +3071,8 @@ Footer */
 
 			#footer {
 				background-attachment: scroll;
-				background-color: #1f1815;
-				/* HERE */
-				background-image: url("images/overlay.png"), url("../../images/bg2.png");
+				background-color: #0c0c0c;
+				/* background-image: url("images/overlay.png"), url("../../images/bg2.png"); */
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
@@ -3235,4 +3234,11 @@ Footer */
 		margin-right: 0; 
 		margin-bottom: 10px; 
 	}
+}
+
+embed {
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 0 auto;
 }
